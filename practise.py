@@ -211,97 +211,190 @@
 # marks.sort()
 # print(marks)
 
-tuple=("Sushmita","Ranjita","Sammu")
-tuple[1]="SSS"
+# tuple=("Sushmita","Ranjita","Sammu")
+# tuple[1]="SSS"
 
-list=[23,45,67,89,98,103]
-print(sum(list))
+# list=[23,45,67,89,98,103]
+# print(sum(list))
 
-a=(7,0,8,0,0,9)
-print(a.count(0))
+# a=(7,0,8,0,0,9)
+# print(a.count(0))
 
-marks=[78,65,89,45,92]
-total=sum(marks)
-print("The total marks are:",sum(marks))
-print("The highest marks is:",max(marks))
-print("The lowest marks is:",min(marks))
-length=len(marks)
-avg=total/length
-print(avg)
+# marks=[78,65,89,45,92]
+# total=sum(marks)
+# print("The total marks are:",sum(marks))
+# print("The highest marks is:",max(marks))
+# print("The lowest marks is:",min(marks))
+# length=len(marks)
+# avg=total/length
+# print(avg)
 
-# dictionary : used to store the element in key value pairs
-table = {
-    "name":"Sushmita",
-    "sslc_marks": 95,
-    "school":"JVMK",
-    "university":"AIET",
-}
-print(table)
-print(type(table))
-print(table["name"]) # to get the value of the respective key in the dict
+# # dictionary : used to store the element in key value pairs
+# table = {
+#     "name":"Sushmita",
+#     "sslc_marks": 95,
+#     "school":"JVMK",
+#     "university":"AIET",
+# }
+# print(table)
+# print(type(table))
+# print(table["name"]) # to get the value of the respective key in the dict
 
-# we can store a list in dict also 
-dict={
-    "name":"Sushmita",
-    "marks":[100,99,20]
-}
-print(dict)
-print(dict["name"])
-print(dict["marks"])
+# # we can store a list in dict also 
+# dict={
+#     "name":"Sushmita",
+#     "marks":[100,99,20]
+# }
+# print(dict)
+# print(dict["name"])
+# print(dict["marks"])
 
-# dictionary methods
-print(dict.items())
-print(dict.keys())
-print(dict.values())
-dict.update({"name":"Ranjita","age":19})
-print(dict)
-print(dict.get("age2")) # prints none
-print(dict["age2"]) #returns an error
-dict.pop("age")
-print(dict)
-dict.popitem()
-print(dict)
-dict2=dict.copy()
-print(dict2)
+# # dictionary methods
+# print(dict.items())
+# print(dict.keys())
+# print(dict.values())
+# dict.update({"name":"Ranjita","age":19})
+# print(dict)
+# print(dict.get("age2")) # prints none
+# print(dict["age2"]) #returns an error
+# dict.pop("age")
+# print(dict)
+# dict.popitem()
+# print(dict)
+# dict2=dict.copy()
+# print(dict2)
 
-# sets in python
-# can't contain repeating elem
-set1={}
-set2={1,2,3}
-print(type(set1)) # returns the type i.e dict
-print(type(set2)) # returns type is set
+# # sets in python
+# # can't contain repeating elem
+# set1={}
+# set2={1,2,3}
+# print(type(set1)) # returns the type i.e dict
+# print(type(set2)) # returns type is set
 
-name=set() # to create an empty set
-set={1,2,3,4,5,6,6,7,5,8,9}
-print(set)
+# name=set() # to create an empty set
+# set={1,2,3,4,5,6,6,7,5,8,9}
+# print(set)
 
-# set methods
-set1={23,45,67,"Sussu","Biri",23,45.6}
-set1.add(45.6)
-print(set1)
-set1.remove("Sussu")
-print(set1)
-set1.pop()
-print(set1)
+# # set methods
+# set1={23,45,67,"Sussu","Biri",23,45.6}
+# set1.add(45.6)
+# print(set1)
+# set1.remove("Sussu")
+# print(set1)
+# set1.pop()
+# print(set1)
 
-# union and intersection of sets
-set3={12,34,56,65,43,45,78}
-set4={4,45,23,78,39,56,12,34}
-print("The union of set3 qnd set4 is",set3.union(set4))
-print("The intersection of set3 qnd set4 is",set3.intersection(set4))
-print(set3-set4)
+# # union and intersection of sets
+# set3={12,34,56,65,43,45,78}
+# set4={4,45,23,78,39,56,12,34}
+# print("The union of set3 qnd set4 is",set3.union(set4))
+# print("The intersection of set3 qnd set4 is",set3.intersection(set4))
+# print(set3-set4)
 
-set5={1,2,3,4}
-set6={1,2,3}
-print(set6.issubset(set5))
-print(set6.issuperset(set5))
-print(set5.isdisjoint(set6))
+# set5={1,2,3,4}
+# set6={1,2,3}
+# print(set6.issubset(set5))
+# print(set6.issuperset(set5))
+# print(set5.isdisjoint(set6))
 
-# problems
-dict={
-    "enu":"What",
-    "yaavdu":"which",
-    "yaake":"why"
-}
-mean=input("Enter the word to get the meaning:")
-print(dict[mean])
+# # problems
+# dict={
+#     "enu":"What",
+#     "yaavdu":"which",
+#     "yaake":"why"
+# }
+# mean=input("Enter the word to get the meaning:")
+# print(dict[mean])
+
+#problems
+s=set()
+num1=int(input("Enter the number1:"))
+s.add(num1)
+num2=int(input("Enter the number2:"))
+s.add(num2)
+num3=int(input("Enter the number3:"))
+s.add(num3)
+num4=int(input("Enter the number4:"))
+s.add(num4)
+num5=int(input("Enter the number5:"))
+s.add(num5)
+num6=int(input("Enter the number6:"))
+s.add(num6)
+print(s)
+
+st={1,2,3,18,"18"}
+print(st)
+
+st=set()
+st.add(18)
+st.add("18")
+print(st)
+
+s=set()
+s.add(20)
+s.add(20.0) # an int and float are same
+s.add("20")
+print(s)
+print(len(s))
+
+student={}
+stude1=input("enter your name:")
+sub1=input("enter your fav subject:")
+student.update({stude1:sub1})
+stude2=input("enter your name:")
+sub2=input("enter your fav subject:")
+student.update({stude2:sub2})
+stude3=input("enter your name:")
+sub3=input("enter your fav subject:")
+student.update({stude3:sub3})
+stude4=input("enter your name:")
+sub4=input("enter your fav subject:")
+student.update({stude4:sub4})
+stude5=input("enter your name:")
+sub5=input("enter your fav subject:")
+student.update({stude5:sub5})
+print(f"the new dict is  {student}")
+
+# the values enterd will be updated
+s={12,3,4,56,"Sushmita",[99,100]} # no we cant change or the lsit cant be added to in a set
+
+# conditional statement
+a=int(input("Enter you age:"))
+if a>=18:
+    print("vote")
+else:
+    print("cant")
+
+
+b=int(input("Enter you age:"))
+if b>=18:
+    print("vote")
+elif b<10:
+    print("You are child")
+else:
+    print("cant")
+
+
+# if elif else ladder
+a=int(input("Enter you marks:"))
+if a >=90 :
+    print("A")
+elif a<=89 and a>=80:
+    print("B")
+elif a<=79 and a>=70:
+    print("c")
+elif a<=69 and a>=60:
+    print("D")
+else:
+    print("fail")    
+
+# multiple if statement nested if
+age=int(input("Enter the age:"))
+if (age%2==0):
+    print("Even")
+    if (age>20):
+        print("not good")
+    else:
+        print("Very good")
+else:
+    print("odd") 
