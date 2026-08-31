@@ -428,50 +428,63 @@
 #     print("Student is not eligible to come to classes")
     
 
-n1="Make a lot of money"
-n2="buy now"
-n3="subscribe this"
-n4="click this"
+# n1="Make a lot of money"
+# n2="buy now"
+# n3="subscribe this"
+# n4="click this"
 
-message=input("Enter the valid message:")
-if (n1 in message) or (n2 in message) or (n3 in message) or (n4 in message):
-    print("It is a spam")
-else:
-    print("It is not spam")
+# message=input("Enter the valid message:")
+# if (n1 in message) or (n2 in message) or (n3 in message) or (n4 in message):
+#     print("It is a spam")
+# else:
+#     print("It is not spam")
 
-words=input("Enter a word:")
-length=len(words)
-print("The length of word is:",length)
-if length < 10:
-    print("Correct user name")
-else:
-    print("Invalid username!!")
+# words=input("Enter a word:")
+# length=len(words)
+# print("The length of word is:",length)
+# if length < 10:
+#     print("Correct user name")
+# else:
+#     print("Invalid username!!")
 
-List=["Sushmita","Ranjta",123,456,"Sammu"]
-name=input("Enter a name that used to find:")
-if name in List:
-    print("The name is present in list")
-else:
-    print("The name is not their in list")
+# List=["Sushmita","Ranjta",123,456,"Sammu"]
+# name=input("Enter a name that used to find:")
+# if name in List:
+#     print("The name is present in list")
+# else:
+#     print("The name is not their in list")
 
 
-marks=int(input("enter the marks:"))
-if marks>=90 and marks<=100:
-    print("the student is excellent!!")
-elif marks>=80 and marks<=89:
-    print("The student has A grade")
-elif marks>=70 and marks<=79:
-    print("The student has B grade")
-elif marks>=60 and marks <=69:
-    print("The student has C grade")
-elif marks>=50 and marks <=59:
-    print("The student has D grade")
-else:
-    print("The student if failed")
+# marks=int(input("enter the marks:"))
+# if marks>=90 and marks<=100:
+#     print("the student is excellent!!")
+# elif marks>=80 and marks<=89:
+#     print("The student has A grade")
+# elif marks>=70 and marks<=79:
+#     print("The student has B grade")
+# elif marks>=60 and marks <=69:
+#     print("The student has C grade")
+# elif marks>=50 and marks <=59:
+#     print("The student has D grade")
+# else:
+#     print("The student if failed")
 
-post=input("Enter a post:")
+# post=input("Enter a post:")
 
-if "sushmita".lower()  in post.lower():
-    print("The post is talking about sushmita")
-else:
-    print("The post is not talking about sushmita")
+# if "sushmita".lower()  in post.lower():
+#     print("The post is talking about sushmita")
+# else:
+#     print("The post is not talking about sushmita")
+
+# # Loop
+# # while loops
+# i=1
+# while(i<=10):
+#     print("Sushmita")
+#     i=i+2
+
+list=["Sushmita","naik","Tanu","Sammu","Ranju",123]
+i=0
+while(i<len(list)):
+    print(list[i])
+    i=i+1
