@@ -306,95 +306,172 @@
 # mean=input("Enter the word to get the meaning:")
 # print(dict[mean])
 
-#problems
-s=set()
-num1=int(input("Enter the number1:"))
-s.add(num1)
-num2=int(input("Enter the number2:"))
-s.add(num2)
-num3=int(input("Enter the number3:"))
-s.add(num3)
-num4=int(input("Enter the number4:"))
-s.add(num4)
-num5=int(input("Enter the number5:"))
-s.add(num5)
-num6=int(input("Enter the number6:"))
-s.add(num6)
-print(s)
+# #problems
+# s=set()
+# num1=int(input("Enter the number1:"))
+# s.add(num1)
+# num2=int(input("Enter the number2:"))
+# s.add(num2)
+# num3=int(input("Enter the number3:"))
+# s.add(num3)
+# num4=int(input("Enter the number4:"))
+# s.add(num4)
+# num5=int(input("Enter the number5:"))
+# s.add(num5)
+# num6=int(input("Enter the number6:"))
+# s.add(num6)
+# print(s)
 
-st={1,2,3,18,"18"}
-print(st)
+# st={1,2,3,18,"18"}
+# print(st)
 
-st=set()
-st.add(18)
-st.add("18")
-print(st)
+# st=set()
+# st.add(18)
+# st.add("18")
+# print(st)
 
-s=set()
-s.add(20)
-s.add(20.0) # an int and float are same
-s.add("20")
-print(s)
-print(len(s))
+# s=set()
+# s.add(20)
+# s.add(20.0) # an int and float are same
+# s.add("20")
+# print(s)
+# print(len(s))
 
-student={}
-stude1=input("enter your name:")
-sub1=input("enter your fav subject:")
-student.update({stude1:sub1})
-stude2=input("enter your name:")
-sub2=input("enter your fav subject:")
-student.update({stude2:sub2})
-stude3=input("enter your name:")
-sub3=input("enter your fav subject:")
-student.update({stude3:sub3})
-stude4=input("enter your name:")
-sub4=input("enter your fav subject:")
-student.update({stude4:sub4})
-stude5=input("enter your name:")
-sub5=input("enter your fav subject:")
-student.update({stude5:sub5})
-print(f"the new dict is  {student}")
+# student={}
+# stude1=input("enter your name:")
+# sub1=input("enter your fav subject:")
+# student.update({stude1:sub1})
+# stude2=input("enter your name:")
+# sub2=input("enter your fav subject:")
+# student.update({stude2:sub2})
+# stude3=input("enter your name:")
+# sub3=input("enter your fav subject:")
+# student.update({stude3:sub3})
+# stude4=input("enter your name:")
+# sub4=input("enter your fav subject:")
+# student.update({stude4:sub4})
+# stude5=input("enter your name:")
+# sub5=input("enter your fav subject:")
+# student.update({stude5:sub5})
+# print(f"the new dict is  {student}")
 
-# the values enterd will be updated
-s={12,3,4,56,"Sushmita",[99,100]} # no we cant change or the lsit cant be added to in a set
+# # the values enterd will be updated
+# s={12,3,4,56,"Sushmita",[99,100]} # no we cant change or the lsit cant be added to in a set
 
-# conditional statement
-a=int(input("Enter you age:"))
-if a>=18:
-    print("vote")
+# # conditional statement
+# a=int(input("Enter you age:"))
+# if a>=18:
+#     print("vote")
+# else:
+#     print("cant")
+
+
+# b=int(input("Enter you age:"))
+# if b>=18:
+#     print("vote")
+# elif b<10:
+#     print("You are child")
+# else:
+#     print("cant")
+
+
+# # if elif else ladder
+# a=int(input("Enter you marks:"))
+# if a >=90 :
+#     print("A")
+# elif a<=89 and a>=80:
+#     print("B")
+# elif a<=79 and a>=70:
+#     print("c")
+# elif a<=69 and a>=60:
+#     print("D")
+# else:
+#     print("fail")    
+
+# # multiple if statement nested if
+# age=int(input("Enter the age:"))
+# if (age%2==0):
+#     print("Even")
+#     if (age>20):
+#         print("not good")
+#     else:
+#         print("Very good")
+# else:
+#     print("odd") 
+
+# # problems
+# num1=int(input("Enter the number 1:"))
+# num2=int(input("Enter the number 2:"))
+# num3=int(input("Enter the number 3:"))
+# num4=int(input("Enter the number 4:"))
+
+# if num1>num2 and num1>num3 and num1>num4:
+#     print(f"the greatest number is {num1}")
+# elif num2>num1 and num2>num3 and num2>num4:
+#     print(f"The greatest number is {num2}")
+# elif num3>num1 and num3>num2 and num3>num4:
+#     print(f"The greatest number is {num3}")
+# else:
+#     print(f"The {num4} is greatest")
+
+# marks1=int(input("Enter marks 1:"))
+# marks2=int(input("Enter marks 2:"))
+# marks3=int(input("Enter marks 3:"))
+# # check total marks
+# total_percetange=((marks1+marks2+marks3)/300)*100
+
+# if total_percetange > 40 and marks1>33 and marks2 > 33 and marks3>33 :
+#     print(f"The student is passed with marks {total_percetange}")
+# elif total_percetange < 30:
+#     print(f"The student is failed with marks {total_percetange}")
+# else:
+#     print("Student is not eligible to come to classes")
+    
+
+n1="Make a lot of money"
+n2="buy now"
+n3="subscribe this"
+n4="click this"
+
+message=input("Enter the valid message:")
+if (n1 in message) or (n2 in message) or (n3 in message) or (n4 in message):
+    print("It is a spam")
 else:
-    print("cant")
+    print("It is not spam")
 
-
-b=int(input("Enter you age:"))
-if b>=18:
-    print("vote")
-elif b<10:
-    print("You are child")
+words=input("Enter a word:")
+length=len(words)
+print("The length of word is:",length)
+if length < 10:
+    print("Correct user name")
 else:
-    print("cant")
+    print("Invalid username!!")
 
-
-# if elif else ladder
-a=int(input("Enter you marks:"))
-if a >=90 :
-    print("A")
-elif a<=89 and a>=80:
-    print("B")
-elif a<=79 and a>=70:
-    print("c")
-elif a<=69 and a>=60:
-    print("D")
+List=["Sushmita","Ranjta",123,456,"Sammu"]
+name=input("Enter a name that used to find:")
+if name in List:
+    print("The name is present in list")
 else:
-    print("fail")    
+    print("The name is not their in list")
 
-# multiple if statement nested if
-age=int(input("Enter the age:"))
-if (age%2==0):
-    print("Even")
-    if (age>20):
-        print("not good")
-    else:
-        print("Very good")
+
+marks=int(input("enter the marks:"))
+if marks>=90 and marks<=100:
+    print("the student is excellent!!")
+elif marks>=80 and marks<=89:
+    print("The student has A grade")
+elif marks>=70 and marks<=79:
+    print("The student has B grade")
+elif marks>=60 and marks <=69:
+    print("The student has C grade")
+elif marks>=50 and marks <=59:
+    print("The student has D grade")
 else:
-    print("odd") 
+    print("The student if failed")
+
+post=input("Enter a post:")
+
+if "sushmita".lower()  in post.lower():
+    print("The post is talking about sushmita")
+else:
+    print("The post is not talking about sushmita")
