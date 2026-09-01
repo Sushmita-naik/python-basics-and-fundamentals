@@ -489,51 +489,91 @@
 #     print(list[i])
 #     i=i+1
 
-# for loops
-for i in range(5):
-    print(i)
+# # for loops
+# for i in range(5):
+#     print(i)
 
-# using step size
-for i in range(1,10,2):
-    print(i)
+# # using step size
+# for i in range(1,10,2):
+#     print(i)
 
-# list in for loop
-lsit=["Sushmita",56,"Sammu","Ranjita"]
-for i in lsit:
-    print(i)
+# # list in for loop
+# lsit=["Sushmita",56,"Sammu","Ranjita"]
+# for i in lsit:
+#     print(i)
 
-# tuple in for loop
-tup=(1,2,3,45,6,"Kanana","sona")
-for i in tup:
-    print(i)
+# # tuple in for loop
+# tup=(1,2,3,45,6,"Kanana","sona")
+# for i in tup:
+#     print(i)
 
-# to get the characters in the string / for loops with strings
-char="Sushmita Mahesh Naik"
-for i in char:
-    print(i)
+# # to get the characters in the string / for loops with strings
+# char="Sushmita Mahesh Naik"
+# for i in char:
+#     print(i)
 
-list=[1,2,3,4,5]
-for i in list:
-    print(i)
-else:
-    print("No items or i") # this is printed when for loop is gets completed not used in practical 
+# list=[1,2,3,4,5]
+# for i in list:
+#     print(i)
+# else:
+#     print("No items or i") # this is printed when for loop is gets completed not used in practical 
 
-# break statement
-for i in range(59):
-    if i==20:
-        break # to exit from the loop 
-    print(i)
+# # break statement
+# for i in range(59):
+#     if i==20:
+#         break # to exit from the loop 
+#     print(i)
 
-# continue statement
-for i in range(20):
-    if i==10:
-        continue # skip the iteration and go to new value
-    print("the i values are", i)
+# # continue statement
+# for i in range(20):
+#     if i==10:
+#         continue # skip the iteration and go to new value
+#     print("the i values are", i)
 
-for i in range(500):
-    pass
-# pass is used to get the output if any indantation error comes then use pass statement to skip the current iteration and move to next loop or anywhere
-i=0
-while(i<10):
-    print(i)
+# for i in range(500):
+#     pass
+# # pass is used to get the output if any indantation error comes then use pass statement to skip the current iteration and move to next loop or anywhere
+# i=0
+# while(i<10):
+#     print(i)
+#     i+=1
+
+# problems
+numbers=int(input("Enter a number:"))
+for i in range(1,11):
+    print(f"{numbers} X {i} = {numbers*i}")
+
+list=["Sushmita","Sammu","Ranju","Sanika","Nishmi"]
+for name in  list:
+    if name.startswith("S"):
+        print(f"Hello {name}")
+
+
+numers=int(input("enter a number:"))
+i=1
+while(i<11):
+    print(f"{numers} X {i} = {numers*i}")
     i+=1
+
+num=int(input("enter a number:"))
+for i in range(2,num):
+    if (num % i)==0:
+        print("The number is not prime")
+        break
+else:
+    print("the number is prime")
+
+
+num=int(input("enter a number:"))
+i=0
+sum=0
+while(i<=num):
+    sum=sum+i
+    i=i+1
+print(f"The total sum is {sum}")
+
+num=int(input("enter a number:"))
+fact=1
+for i in range(1,num+1):
+    fact=fact*i
+print(f"The factorial of number is {fact}")
