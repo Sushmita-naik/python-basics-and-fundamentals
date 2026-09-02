@@ -538,45 +538,88 @@
 #     print(i)
 #     i+=1
 
-# problems
-numbers=int(input("Enter a number:"))
-for i in range(1,11):
-    print(f"{numbers} X {i} = {numbers*i}")
+# # problems
+# numbers=int(input("Enter a number:"))
+# for i in range(1,11):
+#     print(f"{numbers} X {i} = {numbers*i}")
 
-list=["Sushmita","Sammu","Ranju","Sanika","Nishmi"]
-for name in  list:
-    if name.startswith("S"):
-        print(f"Hello {name}")
-
-
-numers=int(input("enter a number:"))
-i=1
-while(i<11):
-    print(f"{numers} X {i} = {numers*i}")
-    i+=1
-
-num=int(input("enter a number:"))
-for i in range(2,num):
-    if (num % i)==0:
-        print("The number is not prime")
-        break
-else:
-    print("the number is prime")
+# list=["Sushmita","Sammu","Ranju","Sanika","Nishmi"]
+# for name in  list:
+#     if name.startswith("S"):
+#         print(f"Hello {name}")
 
 
-num=int(input("enter a number:"))
-i=0
-sum=0
-while(i<=num):
-    sum=sum+i
-    i=i+1
-print(f"The total sum is {sum}")
+# numers=int(input("enter a number:"))
+# i=1
+# while(i<11):
+#     print(f"{numers} X {i} = {numers*i}")
+#     i+=1
 
-num=int(input("enter a number:"))
-fact=1
-for i in range(1,num+1):
-    fact=fact*i
-print(f"The factorial of number is {fact}")
+# num=int(input("enter a number:"))
+# for i in range(2,num):
+#     if (num % i)==0:
+#         print("The number is not prime")
+#         break
+# else:
+#     print("the number is prime")
 
 
-print("Hello world")
+# num=int(input("enter a number:"))
+# i=0
+# sum=0
+# while(i<=num):
+#     sum=sum+i
+#     i=i+1
+# print(f"The total sum is {sum}")
+
+
+# factorial of a number
+# num=int(input("enter a number:"))
+# fact=1
+# for i in range(1,num+1):
+#     fact=fact*i
+# print(f"The factorial of number is {fact}")
+
+# printing the star(*) pattern
+n=int(input("enetr a number:"))
+for i in range(1,n+1):
+    print(" "* (n-i),end="")
+    print("*"* (2*i-1), end="")
+    print("\n")
+
+'''
+*
+**
+***
+'''
+
+n=int(input("Enter a number:"))
+for i in range(1,n+1):
+    print("*"*i,end="")
+    print("\n")
+
+n=int(input("Enter a number:"))
+for i in range(1,n+1):
+    if (i==1) or (i==n):
+        print("*"* n)
+    else:
+        print("*",end="")
+        print(" "* (n-2),end="")
+        print("*",end="")
+    print("")
+
+n=int(input("Enter a number:"))
+for i in range(1,n+1):
+    print("*" *i,end="")
+    print("\n")
+
+n=int(input("Enter a number:"))
+for i in range(n,0,-1):
+    print("*" *i,end="")
+    print("\n")
+    
+n=int(input("Enter a number:"))
+for i in range(1,n+1):
+    for j in range(1, i+1    ):
+        print(j,end="")
+    print()
