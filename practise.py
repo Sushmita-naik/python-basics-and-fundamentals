@@ -581,45 +581,155 @@
 # print(f"The factorial of number is {fact}")
 
 # printing the star(*) pattern
-n=int(input("enetr a number:"))
-for i in range(1,n+1):
-    print(" "* (n-i),end="")
-    print("*"* (2*i-1), end="")
-    print("\n")
+# n=int(input("enetr a number:"))
+# for i in range(1,n+1):
+#     print(" "* (n-i),end="")
+#     print("*"* (2*i-1), end="")
+#     print("\n")
 
-'''
-*
-**
-***
-'''
+# '''
+# *
+# **
+# ***
+# '''
+
+# n=int(input("Enter a number:"))
+# for i in range(1,n+1):
+#     print("*"*i,end="")
+#     print("\n")
+
+# n=int(input("Enter a number:"))
+# for i in range(1,n+1):
+#     if (i==1) or (i==n):
+#         print("*"* n)
+#     else:
+#         print("*",end="")
+#         print(" "* (n-2),end="")
+#         print("*",end="")
+#     print("")
+
+# n=int(input("Enter a number:"))
+# for i in range(1,n+1):
+#     print("*" *i,end="")
+#     print("\n")
+
+# n=int(input("Enter a number:"))
+# for i in range(n,0,-1):
+#     print("*" *i,end="")
+#     print("\n")
+    
+# n=int(input("Enter a number:"))
+# for i in range(1,n+1):
+#     for j in range(1, i+1    ):
+#         print(j,end="")
+#     print()
 
 n=int(input("Enter a number:"))
 for i in range(1,n+1):
-    print("*"*i,end="")
-    print("\n")
-
-n=int(input("Enter a number:"))
-for i in range(1,n+1):
-    if (i==1) or (i==n):
-        print("*"* n)
-    else:
-        print("*",end="")
-        print(" "* (n-2),end="")
-        print("*",end="")
-    print("")
-
-n=int(input("Enter a number:"))
-for i in range(1,n+1):
-    print("*" *i,end="")
+    for j in range(1,i+1):
+        print(i,end="")
     print("\n")
 
 n=int(input("Enter a number:"))
 for i in range(n,0,-1):
-    print("*" *i,end="")
-    print("\n")
-    
-n=int(input("Enter a number:"))
-for i in range(1,n+1):
-    for j in range(1, i+1    ):
+    for j in range(1,i+1):
         print(j,end="")
-    print()
+    print("\n")
+
+n=int(input("Enter a number:"))
+for i in range(1,2*n,2):
+    print("*"*i)
+
+
+n=int(input("Enter a number:"))
+for i in range(n,0,-2):
+    print("*"*i)
+
+n=int(input("Enter a number:"))
+for i in range(1,11):
+    print(f"{n} X {11-i} = {n*(11-i)}")
+
+n=int(input("Enter a number:"))
+for i in range(10,0,-1):
+    print(f"{n} X {i} = {n*i}")
+
+# functions
+def add(): # function defination
+    a=15
+    b=20
+    c=a+b
+    print(c)
+add() # function call
+
+def greet():
+    print("Hello madava")
+greet()
+
+# function with arguments
+def add(a,b):
+    print("Adition is",a+b)
+add(4,5)
+
+def greet(name, end):
+    print("good morning "  +  name)
+    print(end)
+
+greet("sushmita","have a nice day")
+greet("Sammu","Submit java now")
+greet("Ranju","come to my cabin by jyothibha")
+
+def add(a,b):
+    print("Additon is",a+b)
+add(10,20)
+
+def square(n):
+    print("Square of a num is:",n*n)
+square(9)
+
+def maximum(a,b):
+    if a>b:
+        print("a is greator",a)
+    else:
+        print("B is gretor",b)
+maximum(9,10)
+
+def check_even_odd(n):
+    if n%2==0:
+        print("even")
+    else:
+        print("odd")
+check_even_odd(9)
+
+def factorial(n):
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+    print("The fact is",fact)
+factorial(10)
+
+def add(a,b):
+    print("The addition is",a+b)
+    return add
+b=add(10,20)
+
+def square(n):
+    print("the square is",n*n)
+    return square
+s=square(10)
+
+def double(n):
+    print(f"the double of {n} is {n*2}")
+    return double
+doub=double(99)
+
+def check_number(n):
+    if n > 0:
+        print("positive")
+    elif n<0:
+        print("negative")
+    else :
+        print("Zero")
+    return check_number
+check=check_number(9)
+check=check_number(0)
+
