@@ -745,3 +745,58 @@
 # greet()
 # greet("Sammu")
 
+# recursion
+# factorial using recursion
+# def fact(n):
+#     if n==1 or n==0:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+# n=int(input("enter a number:"))
+# print(f"The factorial of {n} is: {fact(n)}")
+
+# def print_numbers(n):
+#     if n==10:
+#         return # when the compiler comes to or n=10 the code will return the values from 1 to 9
+#     print(n)
+#     print_numbers(n+1)
+# print_numbers(1)
+
+# def print_no(n):
+#     if n==0:
+#         return
+#     print(n)
+#     print_no(n-1)
+# print_no(6)
+
+# def name(n):
+#     if n==3:
+#         return
+#     print(n)
+
+# def sum_numbers(n):
+#     if n==1:
+#         return 1
+#     return n+sum_numbers(n-1)
+# print(sum_numbers(6))
+
+def even_numbers(n):
+    if n>10:
+        return
+    print(n)
+    even_numbers(n+2)
+even_numbers(2)
+
+def odd_numbers(n):
+    if n > 10:
+        return
+    print(n)
+    odd_numbers(n+2)
+odd_numbers(1)
+
+def count_down(n):
+    if n==2:
+        return
+    print(n)
+    count_down(n-2)
+count_down(10)
