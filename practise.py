@@ -780,23 +780,84 @@
 #     return n+sum_numbers(n-1)
 # print(sum_numbers(6))
 
-def even_numbers(n):
-    if n>10:
-        return
-    print(n)
-    even_numbers(n+2)
-even_numbers(2)
+# def even_numbers(n):
+#     if n>10:
+#         return
+#     print(n)
+#     even_numbers(n+2)
+# even_numbers(2)
 
-def odd_numbers(n):
-    if n > 10:
-        return
-    print(n)
-    odd_numbers(n+2)
-odd_numbers(1)
+# def odd_numbers(n):
+#     if n > 10:
+#         return
+#     print(n)
+#     odd_numbers(n+2)
+# odd_numbers(1)
 
-def count_down(n):
-    if n==2:
+# def count_down(n):
+#     if n==2:
+#         return
+#     print(n)
+#     count_down(n-2)
+# count_down(10)
+
+
+def greatest(a,b,c):
+    if (a > b) and (a >c):
+        print("a is gretest")
+    elif (b>a) and (b>c):
+        print("B is greatest")
+    else:
+        print("d is gretest")
+greatest(3,4,5)
+
+def f_to_c(f):
+    return 5*(f-32)/9
+f=int(input("Enter temp in fahrenhit:"))
+c=f_to_c(f)
+print(f"{round(c,2)} degree celcius")
+
+def sum_of(n):
+    if n==1:
+        return 1
+    return n+sum_of(n-1)
+print(sum_of(2))
+
+n=int(input("Enter a number:"))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+print(sum)
+
+
+def pat(n):
+    if n==0:
         return
-    print(n)
-    count_down(n-2)
-count_down(10)
+    print("*" *n)
+    pat(n-1)
+print(pat(3))
+
+def I_to_cm(n):
+    if n==0:
+        return
+    return n*2.54
+inches=int(input("enter the values in inches:"))
+print(f"The cm value for {inches} is {I_to_cm(inches)}")
+
+# to strip a given word in a list
+def rem(list,word):
+    n=[]
+    for item in list:
+        if not(item==word):
+            n.append(item.strip(word))
+    return n
+list=["Sushmita","Sammu","Ashwin","Ranju"]
+print(rem(list,"Su"))
+
+def mult(n):
+    for i in range(1,11):
+        print(f"{n} X {i} = {n*i}")
+mult(9)
+
+
+# SNAKE WATER GUN GAME
