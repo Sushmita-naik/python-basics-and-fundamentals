@@ -802,62 +802,124 @@
 # count_down(10)
 
 
-def greatest(a,b,c):
-    if (a > b) and (a >c):
-        print("a is gretest")
-    elif (b>a) and (b>c):
-        print("B is greatest")
-    else:
-        print("d is gretest")
-greatest(3,4,5)
+# def greatest(a,b,c):
+#     if (a > b) and (a >c):
+#         print("a is gretest")
+#     elif (b>a) and (b>c):
+#         print("B is greatest")
+#     else:
+#         print("d is gretest")
+# greatest(3,4,5)
 
-def f_to_c(f):
-    return 5*(f-32)/9
-f=int(input("Enter temp in fahrenhit:"))
-c=f_to_c(f)
-print(f"{round(c,2)} degree celcius")
+# def f_to_c(f):
+#     return 5*(f-32)/9
+# f=int(input("Enter temp in fahrenhit:"))
+# c=f_to_c(f)
+# print(f"{round(c,2)} degree celcius")
 
-def sum_of(n):
-    if n==1:
-        return 1
-    return n+sum_of(n-1)
-print(sum_of(2))
+# def sum_of(n):
+#     if n==1:
+#         return 1
+#     return n+sum_of(n-1)
+# print(sum_of(2))
 
-n=int(input("Enter a number:"))
-sum=0
-for i in range(1,n+1):
-    sum=sum+i
-print(sum)
-
-
-def pat(n):
-    if n==0:
-        return
-    print("*" *n)
-    pat(n-1)
-print(pat(3))
-
-def I_to_cm(n):
-    if n==0:
-        return
-    return n*2.54
-inches=int(input("enter the values in inches:"))
-print(f"The cm value for {inches} is {I_to_cm(inches)}")
-
-# to strip a given word in a list
-def rem(list,word):
-    n=[]
-    for item in list:
-        if not(item==word):
-            n.append(item.strip(word))
-    return n
-list=["Sushmita","Sammu","Ashwin","Ranju"]
-print(rem(list,"Su"))
-
-def mult(n):
-    for i in range(1,11):
-        print(f"{n} X {i} = {n*i}")
-mult(9)
+# n=int(input("Enter a number:"))
+# sum=0
+# for i in range(1,n+1):
+#     sum=sum+i
+# print(sum)
 
 
-# SNAKE WATER GUN GAME
+# def pat(n):
+#     if n==0:
+#         return
+#     print("*" *n)
+#     pat(n-1)
+# print(pat(3))
+
+# def I_to_cm(n):
+#     if n==0:
+#         return
+#     return n*2.54
+# inches=int(input("enter the values in inches:"))
+# print(f"The cm value for {inches} is {I_to_cm(inches)}")
+
+# # to strip a given word in a list
+# def rem(list,word):
+#     n=[]
+#     for item in list:
+#         if not(item==word):
+#             n.append(item.strip(word))
+#     return n
+# list=["Sushmita","Sammu","Ashwin","Ranju"]
+# print(rem(list,"Su"))
+
+# def mult(n):
+#     for i in range(1,11):
+#         print(f"{n} X {i} = {n*i}")
+# mult(9)
+
+
+# STONE PAPER SEASOR GAME without random numbers
+computer="paper"
+u=input("Enter your choice:")
+dictionary= {
+    "Stone":1,
+    "paper":-1,
+    "seasor":0
+}
+computer_num=dictionary[computer]
+u_num=dictionary[u]
+
+if (computer_num == -1 and u_num==1):
+    print("computer win and you lost")
+elif (computer_num == -1 and u_num==0):
+    print("you win!!")
+elif (computer_num == -1 and u_num==-1):
+    print("Draw repeat again")
+elif (computer_num == 1 and u_num==-1):
+    print("You win!!")
+elif (computer_num == 1 and u_num==0):
+    print("computer win you lose")
+elif (computer_num == 1 and u_num==1):
+    print("Draw please try again!!")
+elif(computer_num == 0 and u_num==1 ):
+    print("you win!!")
+elif(computer_num == 0 and u_num==-1):
+    print("you lose and computer wins")
+else:
+    print("Draw please try again")
+
+
+# game with random numbers
+import random
+computer=random.choice([1,-1,0])
+u=int(input("Enter your choice (1=stone,-1=paper, 0=seasor):"))
+if computer == -1 and u == 1:
+    print("Computer chose Paper")
+    print("Computer wins, you lost")
+elif computer == -1 and u == 0:
+    print("Computer chose Paper")
+    print("You win!")
+elif computer == -1 and u == -1:
+    print("Computer chose Paper")
+    print("Draw")
+elif computer == 1 and u == -1:
+    print("Computer chose Stone")
+    print("You win!")
+elif computer == 1 and u == 0:
+    print("Computer chose Stone")
+    print("Computer wins, you lose")
+elif computer == 1 and u == 1:
+    print("Computer chose Stone")
+    print("Draw")
+elif computer == 0 and u == 1:
+    print("Computer chose Scissor")
+    print("You win!")
+elif computer == 0 and u == -1:
+    print("Computer chose Scissor")
+    print("You lose, computer wins")
+elif computer == 0 and u == 0:
+    print("Computer chose Scissor")
+    print("Draw")
+
