@@ -860,66 +860,83 @@ def mult(n):
 mult(9)
 
 
-# STONE PAPER SEASOR GAME without random numbers
-computer="paper"
-u=input("Enter your choice:")
-dictionary= {
-    "Stone":1,
-    "paper":-1,
-    "seasor":0
-}
-computer_num=dictionary[computer]
-u_num=dictionary[u]
+# # STONE PAPER SEASOR GAME without random numbers
+# computer="paper"
+# u=input("Enter your choice:")
+# dictionary= {
+#     "Stone":1,
+#     "paper":-1,
+#     "seasor":0
+# }
+# computer_num=dictionary[computer]
+# u_num=dictionary[u]
 
-if (computer_num == -1 and u_num==1):
-    print("computer win and you lost")
-elif (computer_num == -1 and u_num==0):
-    print("you win!!")
-elif (computer_num == -1 and u_num==-1):
-    print("Draw repeat again")
-elif (computer_num == 1 and u_num==-1):
-    print("You win!!")
-elif (computer_num == 1 and u_num==0):
-    print("computer win you lose")
-elif (computer_num == 1 and u_num==1):
-    print("Draw please try again!!")
-elif(computer_num == 0 and u_num==1 ):
-    print("you win!!")
-elif(computer_num == 0 and u_num==-1):
-    print("you lose and computer wins")
-else:
-    print("Draw please try again")
+# if (computer_num == -1 and u_num==1):
+#     print("computer win and you lost")
+# elif (computer_num == -1 and u_num==0):
+#     print("you win!!")
+# elif (computer_num == -1 and u_num==-1):
+#     print("Draw repeat again")
+# elif (computer_num == 1 and u_num==-1):
+#     print("You win!!")
+# elif (computer_num == 1 and u_num==0):
+#     print("computer win you lose")
+# elif (computer_num == 1 and u_num==1):
+#     print("Draw please try again!!")
+# elif(computer_num == 0 and u_num==1 ):
+#     print("you win!!")
+# elif(computer_num == 0 and u_num==-1):
+#     print("you lose and computer wins")
+# else:
+#     print("Draw please try again")
 
 
-# game with random numbers
-import random
-computer=random.choice([1,-1,0])
-u=int(input("Enter your choice (1=stone,-1=paper, 0=seasor):"))
-if computer == -1 and u == 1:
-    print("Computer chose Paper")
-    print("Computer wins, you lost")
-elif computer == -1 and u == 0:
-    print("Computer chose Paper")
-    print("You win!")
-elif computer == -1 and u == -1:
-    print("Computer chose Paper")
-    print("Draw")
-elif computer == 1 and u == -1:
-    print("Computer chose Stone")
-    print("You win!")
-elif computer == 1 and u == 0:
-    print("Computer chose Stone")
-    print("Computer wins, you lose")
-elif computer == 1 and u == 1:
-    print("Computer chose Stone")
-    print("Draw")
-elif computer == 0 and u == 1:
-    print("Computer chose Scissor")
-    print("You win!")
-elif computer == 0 and u == -1:
-    print("Computer chose Scissor")
-    print("You lose, computer wins")
-elif computer == 0 and u == 0:
-    print("Computer chose Scissor")
-    print("Draw")
+# # game with random numbers
+# import random
+# computer=random.choice([1,-1,0])
+# u=int(input("Enter your choice (1=stone,-1=paper, 0=seasor):"))
+# if computer == -1 and u == 1:
+#     print("Computer chose Paper")
+#     print("Computer wins, you lost")
+# elif computer == -1 and u == 0:
+#     print("Computer chose Paper")
+#     print("You win!")
+# elif computer == -1 and u == -1:
+#     print("Computer chose Paper")
+#     print("Draw")
+# elif computer == 1 and u == -1:
+#     print("Computer chose Stone")
+#     print("You win!")
+# elif computer == 1 and u == 0:
+#     print("Computer chose Stone")
+#     print("Computer wins, you lose")
+# elif computer == 1 and u == 1:
+#     print("Computer chose Stone")
+#     print("Draw")
+# elif computer == 0 and u == 1:
+#     print("Computer chose Scissor")
+#     print("You win!")
+# elif computer == 0 and u == -1:
+#     print("Computer chose Scissor")
+#     print("You lose, computer wins")
+# elif computer == 0 and u == 0:
+#     print("Computer chose Scissor")
+#     print("Draw")
 
+# File open and file close
+# f=open("file.txt","r") # to open the file
+# data=f.read() # to read the file contents
+# print(data) 
+# data=f.close() # to close the file (file should be closed after opned)
+
+# how to write in a file
+# string="Sushmita can get 12 lakh packages"
+# f=open("My_file.txt","w") # to open the contents that we written in code 
+# f.write(string) # to print the contents that is in code
+# f.close() # to close 
+
+# to print the file contents in list format then use f.readlines() built in function
+f=open("file.txt")
+lines=f.readlines() # to get the contents in list format
+print(lines,type(lines))
+f.close()
